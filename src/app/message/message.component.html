@@ -1,6 +1,10 @@
 @if (verlieheneSache) {
 
-  <ion-label>Verliehene Sache</ion-label>
+  <ion-item [routerLink]="'/message/' + verlieheneSache.id" [detail]="false">
+    <ion-label>
+      {{ verlieheneSache.sache }}
+    </ion-label>
+  </ion-item>
 
   <!--
   <ion-item [routerLink]="'/message/' + message.id" [detail]="false">
