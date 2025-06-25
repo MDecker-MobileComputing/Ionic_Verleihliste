@@ -15,33 +15,33 @@ export class DataService {
   public verlieheneSachenArray: VerlieheneSache[] = [
     {
       id       : 0,
-      sache    : "Quietsche-Entchen",
-      entleiher: "Alex",
-      frist    : "2025-10-01"
+      sache    : "Eierharfe",
+      entleiher: "Erika",
+      frist    : "05.11.2025"
     },
     {
       id       : 1,
-      sache    : "Wackel-Dackel",
-      entleiher: "Berta",
-      frist    : "2025-07-15"
+      sache    : "Gartenzwerg",
+      entleiher: "Claus",
+      frist    : "20.08.2025"
     },
     {
       id       : 2,
-      sache    : "Gartenzwerg",
-      entleiher: "Claus",
-      frist    : "2025-08-20"
+      sache    : "Plömpel",
+      entleiher: "Dora",
+      frist    : "10.09.2025"
     },
     {
       id       : 3,
-      sache    : "Plömpel",
-      entleiher: "Dora",
-      frist    : "2025-09-10"
+      sache    : "Quietsche-Entchen",
+      entleiher: "Alex",
+      frist    : "Dauerleihgabe"
     },
     {
       id       : 4,
-      sache    : "Eierharfe",
-      entleiher: "Erika",
-      frist    : "2025-11-05"
+      sache    : "Wackel-Dackel",
+      entleiher: "Berta",
+      frist    : "15.07.2025"
     }
   ];
 

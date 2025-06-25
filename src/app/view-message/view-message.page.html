@@ -8,8 +8,14 @@
 
 @if (verlieheneSache) {
 
-  <ion-content [fullscreen]="true">
-    Verliehene Sache: {{ verlieheneSache.sache }}
+  <ion-content [fullscreen]="true" class="ion-padding">
+
+    <h1>{{ verlieheneSache.sache }}</h1>
+
+    <h3>Verliehen an: {{ verlieheneSache.entleiher }}</h3>
+
+    <h3>Leihfrist: {{ verlieheneSache.frist }} </h3>
+
     <!--
     <ion-item>
       <ion-icon aria-hidden="true" name="person-circle" color="primary"></ion-icon>

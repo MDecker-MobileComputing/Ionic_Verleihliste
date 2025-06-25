@@ -1,5 +1,7 @@
 @if (verlieheneSache) {
 
+  <!-- Listeneintrag darstellen -->
+
   <ion-item [routerLink]="'/message/' + verlieheneSache.id" [detail]="false">
     <ion-label>
       {{ verlieheneSache.sache }}
