@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inbox
+      Leihgaben
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,14 +14,14 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">
-        Inbox
+        Leihgaben
       </ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-list>
-    @for (message of getMessages(); track message) {
-      <app-message [message]="message"></app-message>
+    @for ( vs of getVerlieheneSachen(); track vs ) {
+      <app-message [verlieheneSache]="vs"></app-message>
     }
   </ion-list>
 </ion-content>

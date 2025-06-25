@@ -2,7 +2,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IonicModule, Platform } from '@ionic/angular';
-import { DataService, Message } from '../services/data.service';
+import { DataService, VerlieheneSache } from '../services/data.service';
 
 @Component({
   selector: 'app-view-message',
@@ -11,7 +11,7 @@ import { DataService, Message } from '../services/data.service';
   standalone: false,
 })
 export class ViewMessagePage implements OnInit {
-  public message!: Message;
+  public verlieheneSache!: VerlieheneSache;
   private data = inject(DataService);
   private activatedRoute = inject(ActivatedRoute);
   private platform = inject(Platform);
@@ -20,7 +20,7 @@ export class ViewMessagePage implements OnInit {
 
   ngOnInit() {
     const id = this.activatedRoute.snapshot.paramMap.get('id') as string;
-    this.message = this.data.getMessageById(parseInt(id, 10));
+    this.verlieheneSache = this.data.getVerlieheneSacheById(parseInt(id, 10));
   }
 
   getBackButtonText() {

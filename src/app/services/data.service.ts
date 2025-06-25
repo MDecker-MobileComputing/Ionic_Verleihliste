@@ -1,83 +1,53 @@
 import { Injectable } from '@angular/core';
 
-export interface Message {
-  fromName: string;
-  subject: string;
-  date: string;
-  id: number;
-  read: boolean;
+export interface VerlieheneSache {
+  sache    : string,
+  entleiher: string;
+  frist    : string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  public messages: Message[] = [
+
+  public verlieheneSachenArray: VerlieheneSache[] = [
     {
-      fromName: 'Matt Chorsey',
-      subject: 'New event: Trip to Vegas',
-      date: '9:32 AM',
-      id: 0,
-      read: false
+      sache    : "Quietsche-Entchen",
+      entleiher: "Alex",
+      frist    : "2025-10-01"
     },
     {
-      fromName: 'Lauren Ruthford',
-      subject: 'Long time no chat',
-      date: '6:12 AM',
-      id: 1,
-      read: false
+      sache    : "Wackel-Dackel",
+      entleiher: "Berta",
+      frist    : "2025-07-15"
     },
     {
-      fromName: 'Jordan Firth',
-      subject: 'Report Results',
-      date: '4:55 AM',
-      id: 2,
-      read: false
+      sache    : "Gartenzwerg",
+      entleiher: "Claus",
+      frist    : "2025-08-20"
     },
     {
-      fromName: 'Bill Thomas',
-      subject: 'The situation',
-      date: 'Yesterday',
-      id: 3,
-      read: false
+      sache    : "Plömpel",
+      entleiher: "Dora",
+      frist    : "2025-09-10"
     },
     {
-      fromName: 'Joanne Pollan',
-      subject: 'Updated invitation: Swim lessons',
-      date: 'Yesterday',
-      id: 4,
-      read: false
-    },
-    {
-      fromName: 'Andrea Cornerston',
-      subject: 'Last minute ask',
-      date: 'Yesterday',
-      id: 5,
-      read: false
-    },
-    {
-      fromName: 'Moe Chamont',
-      subject: 'Family Calendar - Version 1',
-      date: 'Last Week',
-      id: 6,
-      read: false
-    },
-    {
-      fromName: 'Kelly Richardson',
-      subject: 'Placeholder Headhots',
-      date: 'Last Week',
-      id: 7,
-      read: false
+      sache    : "Eierharfe",
+      entleiher: "Erika",
+      frist    : "2025-11-05"
     }
   ];
 
-  constructor() { }
 
-  public getMessages(): Message[] {
-    return this.messages;
+
+  public getVerlieheneSachen(): VerlieheneSache[] {
+
+    return this.verlieheneSachenArray;
   }
 
-  public getMessageById(id: number): Message {
-    return this.messages[id];
+  public getVerlieheneSacheById( idx: number ): VerlieheneSache {
+
+    return this.verlieheneSachenArray[idx];
   }
 }
