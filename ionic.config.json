@@ -1,0 +1,7 @@
+{
+  "name": "Leihliste",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
