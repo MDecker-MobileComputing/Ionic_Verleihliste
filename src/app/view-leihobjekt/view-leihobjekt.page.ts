@@ -5,9 +5,9 @@ import { IonicModule, Platform } from '@ionic/angular';
 import { DataService, VerlieheneSache } from '../services/data.service';
 
 @Component({
-  selector: 'app-view-message',
-  templateUrl: './view-message.page.html',
-  styleUrls: ['./view-message.page.scss'],
+  selector: 'app-leihobjekt-message',
+  templateUrl: './view-leihobjekt.page.html',
+  styleUrls: ['./view-leihobjekt.page.scss'],
   standalone: false,
 })
 export class ViewMessagePage implements OnInit {

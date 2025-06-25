@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ViewMessagePage } from './view-message.page';
+import { ViewMessagePage } from './view-leihobjekt.page';
 
 const routes: Routes = [
   {

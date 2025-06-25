@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ViewMessagePage } from './view-message.page';
+import { ViewMessagePage } from './view-leihobjekt.page';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ViewMessagePageRoutingModule } from './view-message-routing.module';
+import { ViewMessagePageRoutingModule } from './view-leihobjekt-routing.module';
 
 @NgModule({
   imports: [
@@ -16,4 +16,4 @@ import { ViewMessagePageRoutingModule } from './view-message-routing.module';
   ],
   declarations: [ViewMessagePage]
 })
-export class ViewMessagePageModule {}
+export class ViewLeihobjektPageModule {}

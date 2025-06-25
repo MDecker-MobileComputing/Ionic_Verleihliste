@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="getBackButtonText()" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+@if (verlieheneSache) {
+
+  <ion-content [fullscreen]="true" class="ion-padding">
+
+    <h1>{{ verlieheneSache.sache }}</h1>
+
+    <h3>Verliehen an: {{ verlieheneSache.entleiher }}</h3>
+
+    <h3>Leihfrist: {{ verlieheneSache.frist }}</h3>
+
+  </ion-content>
+
+}
