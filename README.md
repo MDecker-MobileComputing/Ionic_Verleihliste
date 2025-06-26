@@ -2,7 +2,8 @@
 
 <br>
 
-Dieses Repo enthält eine Angular/Ionic-App, die die Verwendung des Ionic-Templates "list" demonstriert.
+Dieses Repo enthält eine Angular/Ionic-App, die die Verwendung des Ionic-Templates "list" demonstriert,
+was auch eine eigene Komponente beinhaltet.
 
 <br>
 

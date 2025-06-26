@@ -3,13 +3,13 @@ import { Platform } from '@ionic/angular';
 import { VerlieheneSache } from '../services/data.service';
 
 @Component({
-  selector: 'app-message',
-  templateUrl: './message.component.html',
-  styleUrls: ['./message.component.scss'],
+  selector: 'app-leihobjekt',
+  templateUrl: './leihobjekt.component.html',
+  styleUrls: ['./leihobjekt.component.scss'],
   standalone: false,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MessageComponent {
+export class LeihobjektComponent {
   private platform = inject(Platform);
   @Input() verlieheneSache?: VerlieheneSache;
   isIos() {

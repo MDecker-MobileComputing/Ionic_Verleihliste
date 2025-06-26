@@ -1,11 +1,11 @@
 @if (verlieheneSache) {
 
-  <!-- Listeneintrag darstellen -->
+  <!-- Einzelnen Listeneintrag darstellen -->
 
   <ion-item [routerLink]="'/message/' + verlieheneSache.id" [detail]="false">
     <ion-label>
-      {{ verlieheneSache.sache }} 
-      &nbsp; 
+      {{ verlieheneSache.sache }}
+      &nbsp;
       <ion-note *ngIf="verlieheneSache.faellig" color="danger">überfällig</ion-note>
     </ion-label>
   </ion-item>

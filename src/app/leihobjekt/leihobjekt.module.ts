@@ -5,11 +5,11 @@ import { RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MessageComponent } from './message.component';
+import { LeihobjektComponent } from './leihobjekt.component';
 
 @NgModule({
   imports: [ CommonModule, FormsModule, IonicModule, RouterModule],
-  declarations: [MessageComponent],
-  exports: [MessageComponent]
+  declarations: [LeihobjektComponent],
+  exports: [LeihobjektComponent]
 })
-export class MessageComponentModule {}
+export class LeihobjekteComponentModule {}
