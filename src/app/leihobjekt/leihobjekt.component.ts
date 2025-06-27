@@ -10,9 +10,13 @@ import { VerlieheneSache } from '../services/data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LeihobjektComponent {
+
   private platform = inject(Platform);
+
   @Input() verlieheneSache?: VerlieheneSache;
+
   isIos() {
+
     return this.platform.is('ios')
   }
 }
