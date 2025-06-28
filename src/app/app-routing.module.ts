@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'message/:id',
+    path: 'leihobjekt/:id',
     loadChildren: () => import('./view-leihobjekt/view-leihobjekt.module').then( m => m.ViewLeihobjektPageModule)
   },
   {
