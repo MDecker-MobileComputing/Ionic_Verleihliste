@@ -11,20 +11,26 @@ import { DataService, VerlieheneSache } from '../services/data.service';
   standalone: false,
 })
 export class ViewMessagePage implements OnInit {
+
   public verlieheneSache!: VerlieheneSache;
-  private data = inject(DataService);
-  private activatedRoute = inject(ActivatedRoute);
-  private platform = inject(Platform);
+  private data           = inject( DataService    );
+  private activatedRoute = inject( ActivatedRoute );
+  private platform       = inject( Platform       );
 
   constructor() {}
 
   ngOnInit() {
+
     const id = this.activatedRoute.snapshot.paramMap.get('id') as string;
-    this.verlieheneSache = this.data.getVerlieheneSacheById(parseInt(id, 10));
+
+    this.verlieheneSache = 
+        this.data.getVerlieheneSacheById( parseInt( id, 10 ) );
   }
 
   getBackButtonText() {
     const isIos = this.platform.is('ios')
     return isIos ? 'Inbox' : '';
   }
+
 }
+
