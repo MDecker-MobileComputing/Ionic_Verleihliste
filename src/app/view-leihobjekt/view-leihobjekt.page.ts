@@ -17,17 +17,18 @@ export class ViewMessagePage implements OnInit {
   private activatedRoute = inject( ActivatedRoute );
   private platform       = inject( Platform       );
 
-  constructor() {}
 
   ngOnInit() {
 
-    const id = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    const id = 
+        this.activatedRoute.snapshot.paramMap.get('id') as string;
 
     this.verlieheneSache = 
         this.data.getVerlieheneSacheById( parseInt( id, 10 ) );
   }
 
   getBackButtonText() {
+
     const isIos = this.platform.is('ios')
     return isIos ? 'Inbox' : '';
   }
