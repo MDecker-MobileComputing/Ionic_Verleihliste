@@ -1,3 +1,4 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -14,8 +15,14 @@
 
     <h3>Verliehen an: {{ verlieheneSache.entleiher }}</h3>
 
-    <h3>Leihfrist: {{ verlieheneSache.frist }}</h3>
-
+    <h3>
+      Leihfrist: {{ verlieheneSache.frist }}
+      <ion-note *ngIf="verlieheneSache.faellig" color="danger">überfällig</ion-note>
+    </h3>
+    
   </ion-content>
 
 }
+
+
+

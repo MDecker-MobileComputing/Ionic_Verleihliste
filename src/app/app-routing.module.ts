@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'leihobjekt/:id',
-    loadChildren: () => import('./view-leihobjekt/view-leihobjekt.module').then( m => m.ViewLeihobjektPageModule)
+    loadChildren: () => import('./view-leihobjekt/view-leihobjekt.module').then( m => m.ViewLeihobjektPageModule )
   },
   {
     path: '',

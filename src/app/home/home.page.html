@@ -6,14 +6,20 @@
 
 <ion-content [fullscreen]="true">
 
-  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
-
   <ion-list [inset]="true">
+
     @for ( sache of getVerlieheneSachen(); track sache ) {
-      <app-leihobjekt [verlieheneSache]="sache"></app-leihobjekt>
+
+      <ion-item [routerLink]="'/leihobjekt/' + sache.id" [detail]="false">
+        <ion-label>
+          {{ sache.sache }}
+          &nbsp;
+          <ion-note *ngIf="sache.faellig" color="danger">überfällig</ion-note>
+        </ion-label>
+      </ion-item>
+
     }
+    
   </ion-list>
 
 </ion-content>

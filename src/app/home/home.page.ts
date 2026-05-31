@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { RefresherCustomEvent } from '@ionic/angular';
 
-
 import { DataService, VerlieheneSache } from '../services/data.service';
+
 
 @Component({
   selector: 'app-home',
@@ -12,12 +12,13 @@ import { DataService, VerlieheneSache } from '../services/data.service';
 })
 export class HomePage {
 
-  private data = inject( DataService ); // anstelle Konstruktor-Injection
+  private data = inject( DataService );
+
+  constructor() {}
 
   refresh( ev: any ) {
-
     setTimeout( () => {
-      (ev as RefresherCustomEvent).detail.complete();
+      ( ev as RefresherCustomEvent ).detail.complete();
     }, 3000 );
   }
 
@@ -25,5 +26,4 @@ export class HomePage {
 
     return this.data.getVerlieheneSachen();
   }
-
 }

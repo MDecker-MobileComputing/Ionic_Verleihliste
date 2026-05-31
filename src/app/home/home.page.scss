@@ -1,0 +1,19 @@
+ion-item {
+	--padding-start: 0;
+	--inner-padding-end: 0;
+}
+
+ion-label {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+ion-item ion-note {
+	font-size: 0.9375rem;
+	margin-right: 8px;
+	font-weight: normal;
+}
+
+ion-item ion-note.md {
+	margin-right: 14px;
+}
